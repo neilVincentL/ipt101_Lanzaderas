@@ -1,78 +1,31 @@
 <!DOCTYPE html>
-
-<h1>PHP FORM ACTIVITY</h1>
-
+<html>
+<head>
+	<title>User Registration Form</title>
+</head>
 <body>
-<form action="/process-form" method="POST" class="my-form">
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" name="firstname" required>
-  
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname" required>
-  
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-  
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-  
-    <label for="confirm-password">Confirm Password:</label>
-    <input type="password" id="confirm-password" name="confirm-password" required>
-  
-    <button type="submit">Submit</button>
-  </form>
-  
-  <style>
-    h1 {text-align: center;}
-    
-    .my-form {
-      display: flex;
-      flex-direction: column;
-      width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-radius: 5px;
-    }
-  
-    .my-form label {
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-  
-    .my-form input[type="text"],
-    .my-form input[type="email"],
-    .my-form input[type="password"] {
-      padding: 10px;
-      margin-bottom: 20px;
-      border: none;
-      border-radius: 3px;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
-    }
-  
-    .my-form button[type="submit"] {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      border: none;
-      border-radius: 3px;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  
-    .my-form button[type="submit"]:hover {
-      background-color: #3e8e41;
-    }
-  
-    .my-form input:focus {
-      outline: none;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    }
-  </style>
+	<h1>User Registration Form</h1>
+	<form method="POST" action="Lanzaderas_form.php">
+		<label>First Name:</label>
+		<input type="text" name="firstname" required><br><br>
+		
+		<label>Last Name:</label>
+		<input type="text" name="lastname" required><br><br>
+		
+		<label>Email:</label>
+		<input type="email" name="email" required><br><br>
+		
+		<label>Username:</label>
+		<input type="text" name="username" required><br><br>
+		
+		<label>Password:</label>
+		<input type="password" name="password" required><br><br>
+		
+		<label>Confirm Password:</label>
+		<input type="password" name="confirm_password" required><br><br>
+		
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>
 
-  </body>
-  </html>
